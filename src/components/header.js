@@ -8,6 +8,7 @@ const LogoImg = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
   height: 7em;
   width: 15em;
 `

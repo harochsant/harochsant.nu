@@ -2,18 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const MenuItems = styled.div`
-  ul {
+  & ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
   }
 
-  a {
+  & a {
     color: #444;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+    text-decoration: none; 
+    font-size: 1.1rem;
   }
 
   display: flex;
