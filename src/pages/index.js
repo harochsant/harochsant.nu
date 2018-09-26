@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 `
+
 const IndexPage = () => (
   <Fragment>
     <Layout>

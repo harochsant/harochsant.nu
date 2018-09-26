@@ -10,7 +10,7 @@ const MenuItems = styled.div`
   }
 
   a {
-    color: #666;
+    color: #444;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;

@@ -2,8 +2,16 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Header from './header'
+
+const PageContainer = styled.div`
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -34,7 +42,9 @@ const Layout = ({ children }) => (
           <html lang="sv" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <PageContainer>
+          <div>{children}</div>
+        </PageContainer>
       </Fragment>
     )}
   />
