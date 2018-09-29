@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: micnil/harochsant.nu
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: "pages"
+    label: "Sidor"
+    files:
+      - file: "content/home.md"
+        label: "Startsida"
+        name: "home"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "home-page"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+      - file: "content/about.md"
+        label: "Om oss"
+        name: "about"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+      - file: "content/contact.md"
+        label: "Kontakt"
+        name: "contact"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "contact-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Innehåll", name: "body", widget: "markdown"}
+      - file: "content/services.md"
+        label: "Tjänster"
+        name: "services"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "services-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Innehåll", name: "body", widget: "markdown"}

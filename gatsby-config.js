@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'harochsant',
         short_name: 'harochsant',
@@ -17,12 +17,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: 'src/utils/typography',
       },
     },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-offline',
-    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-styled-components',
   ],
 }
